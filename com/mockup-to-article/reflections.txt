@@ -1,0 +1,11 @@
+Quais novas habilidades você aprendeu?
+Buscas por informacao em geral referente a HTML,  melhor descrever os elemento.
+
+O que foi fácil?
+Identificar as tag que deveria utilizar para fazer a formação da pagina.
+
+O que foi difícil?
+encontrar a tag "sup", busquei nao utilizar a dicas da tarefa para melhorar o senso de busca.
+
+Como você usou as estratégias de solução de problemas no primeiro projeto para superar os desafios até agora?
+Eu identifiquei as tags que deveria utilizar para formatar a pagina. As tag que eu não conhecia eu pesquisei na internet como eu poderia obter determinado tipo de resultado.
