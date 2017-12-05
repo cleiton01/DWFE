@@ -3,27 +3,41 @@
 
 body{
 	font-family: "Helvetica sans-serif";
+}
+
+.talic-font{
+	font-style: italic;
+}
+
+.bold-text{
+		font-weight: bold;
+}
+
+.list-without{
+	list-style: none ;
 
 }
 
 .card{
-	width: 400px;
-	height: 600px;
+	width: 300px;
+	height: 800px;
 	box-shadow: 8px 8px 8px 2px rgba(153, 153, 153, 0.9);
-	padding: 10px 10px 10px 15px;
+	padding: 10px 10px 10px 10px;
 	border: 1px solid #ddd;
 }
-.imagem{
 
+.imagem{
 	border: 1px solid #ddd;
+	width: 300px;
+	height: 250px;
 
 }
 
 .bottom{
-	width: 360px;
-	height: 52%;
+	width: 270px;
+	height: 450px;
 	border: 1px solid #ddd;
-	padding: 16px 16px 16px 16px;
+	padding: 15px 15px 15px 15px;
 
 
 }
