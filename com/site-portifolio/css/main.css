@@ -1,0 +1,58 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #747704;
+    margin: 1em;
+}
+
+hr {
+    background-color: #7d97ad;
+    high: 10px;
+
+    height: 3px;
+    border: 0;
+}
+
+.text-muted {
+    color: #bcbbbb;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.text-medium {
+    font-size: 40px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.title-text {
+    text-align: right;
+}
+
+.img-logo {
+    margin-top: 10px;
+}
+
+.img-left {
+    margin: 40px;
+}
+
+.img-model-align {
+    margin: auto;
+}
+
