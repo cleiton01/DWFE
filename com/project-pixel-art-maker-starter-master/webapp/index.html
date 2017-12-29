@@ -4,7 +4,7 @@
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="../css/styles.css">
-
+    <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
 </head>
 <body>
     <h1>Lab: Pixel Art Maker</h1>
@@ -12,21 +12,22 @@
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_height" name="height" min="1" value="15">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="number" id="input_width" name="width" min="1" value="15">
 
-        <input onclick="makeGrid()"  type="submit" value="Atualizar ">
+        <input onclick="makeGrid(event)"  type="submit" value="Atualizar ">
 
     </form>
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
-    <h2 id="demo">AHHHHHH</h2>
+
     <h2>Design Canvas</h2>
     <table id="pixel_canvas"></table>
 
+
     <script src="../js/designs.js"></script>
-    <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+
 </body>
 </html>
