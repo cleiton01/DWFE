@@ -1,58 +1,57 @@
+
+//
+let sizePicker = $('#sizePicker');
+
+//
+let cellTable = $('#pixel_canvas');
+
+// Set default color to draw.
+let color = 'FFFFFF';
+
 function makeGrid(event) {
     event.preventDefault();
 
-    // this code to remove the contect of the table if table is alredy created.
-    let remContentTable, remRableRow;
-    remContentTable = $('#pixel_canvas');
-    remRableRow = $('.grid');
-    console.log("remRableRow: "+remRableRow.val()   );
-    remRableRow.remove();
+    //create local variable
+    let getInputHeight, getInputWidth;
 
-
-    // This code create a responsive grid to draw
-    let getInputHeight, getInputWidth, cellTable;
-
-
+    // start the value of the variable
     getInputHeight = $('#input_height').val();
     getInputWidth =  $('#input_width').val();
+
 
     console.log("This is the height: "+getInputHeight);
     console.log("This is the width: "+getInputWidth);
 
-    cellTable = $('#pixel_canvas');
+
+    // this code to remove the contect of the table if table is alredy created.
+    cellTable.children().remove();
+
+
+    // This code create a grid to draw
 
     let setRow, setColumn, row_;
+
     for ( let tableHeight = 0; tableHeight < getInputHeight; tableHeight++ ){
-        row_ = cellTable.append('<tr id="grid-height"></tr>');
+        let row_ = '';
+        row_ +='<tr>'
+
         for ( let tableWidth = 0; tableWidth < getInputWidth; tableWidth++ ){
-            row_.append('<td class="grid"></td>');
+            row_ += ('<td></td>');
         }
+        cellTable.append( row_ + '</tr>' );
     }
 
+}
 
-    $(".grid").width(800/getInputHeight);
-    $(".grid").height(800/getInputHeight);
+// This code change de color used to draw on the panel.
+function collorCell(evnt){
 
+    color = $('#colorPicker').val();
 
+    $(this).css('background-color',color);
 
-
-
-    // This code change de color used to draw on the panel.
-
-    let colorValue;
-    colorValue = $('#colorPicker').val();
-    console.log(colorValue);
-
-    $(".grid").mouseover(function() {
-        $(this).css("background-color", "black");
-    });
-
-    $(".newGrid").click(function() {
-        refreshGrid();
-
-        $(".grid").mouseover(function() {
-            $(this).css("background-color", "black");
-        });
-    });
 
 }
+
+// get the event
+cellTable.on('mousedown mouseover contextmenu','td', collorCell);
